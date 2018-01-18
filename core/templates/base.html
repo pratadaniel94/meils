@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title></title>
+        <link href="{% static "css/formulario.css" %}" rel="stylesheet">
+        <script src="{% static "js/formulario.js" %}"></script> 
+    </head>
+    <body>
+        <header>
+            <li><a href="/">home</a></li>
+            <li><a href="/cadastro">Cadastro</a></li>
+            <li><a href="/">home3</a></li>
+        </header>
+        {% block main %}
+      
+        {% endblock main %}
+        <footer>
+                <p> 
+                &copy </br> 
+                todos os direitos reservados</br>
+                </p>
+        </footer>
+
+    </body>
+</html>
