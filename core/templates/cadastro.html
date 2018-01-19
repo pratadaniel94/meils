@@ -4,15 +4,8 @@
 <h1>Cadastro</h1>
 <p>formulario de cadastro</p>
 <main>
-    <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Pessoais')">Pessoais</button>
-        <button class="tablinks" onclick="openCity(event, 'Contato')">Contato</button>
-        <button class="tablinks" onclick="openCity(event, 'Endereço')">Endereço</button>
-    </div>
         <div>
             <form>
-            <div id="Pessoais" class="tabcontent">
             <h2>Informações Pessoais</h2>
                 <label for="nome">Nome:</label>
                 <input name="nome" id="nome" placeholder="Seu nome"><br>
@@ -34,8 +27,6 @@
                 <input type="file" name="foto1"  accept="image/png, image/jpeg"  multiple /><br>
                 <label for="FOTO2">FOTO2</label>
                 <input type="file" name="foto2"  accept="image/png, image/jpeg"  multiple />
-            </div>
-            <div id="Contato" class="tabcontent">
             <h2>Contato</h2>
                 <label>E-mail</label>
                 <input type="email" name="email" size="50" maxlength="80" /><br>
@@ -43,58 +34,17 @@
                 <input type="tel" name="telefone" size="20" maxlength="20" /><br>
                 <label>Celular</label>
                 <input type="tel" name="celular" size="20" maxlength="20" /><br>
-            </div>
-            <div id="Endereço" class="tabcontent">
             <h2>Endereço</h2>
-                <label>CEP:</label>
-                <input type="text" name="cep"  size="40" maxlength="9" placeholder="CEP"/><br>
-                <label>Endereço</label>
-                <input type="text" name="endereco"  size="40" maxlength="150" placeholder="endereço" /><br>
-                <label>Número:</label>
-                <input type="text" name="numero"  size="40" maxlength="10" placeholder="numero"/><br>
-                <label>Complemento</label>
-                <input type="text" name="complemento"  size="40" maxlength="150" placeholder="complemento"/><br>
-                <label>Bairro</label>
-                <input type="text" name="bairro"  size="40" maxlength="150" placeholder="bairro"/><br>
-                <label>Estado</label>
-                <select name="estado"> 
-                        <option value="estado">Selecione o Estado</option> 
-                        <option value="ac">Acre</option> 
-                        <option value="al">Alagoas</option> 
-                        <option value="am">Amazonas</option> 
-                        <option value="ap">Amapá</option> 
-                        <option value="ba">Bahia</option> 
-                        <option value="ce">Ceará</option> 
-                        <option value="df">Distrito Federal</option> 
-                        <option value="es">Espírito Santo</option> 
-                        <option value="go">Goiás</option> 
-                        <option value="ma">Maranhão</option> 
-                        <option value="mt">Mato Grosso</option> 
-                        <option value="ms">Mato Grosso do Sul</option> 
-                        <option value="mg">Minas Gerais</option> 
-                        <option value="pa">Pará</option> 
-                        <option value="pb">Paraíba</option> 
-                        <option value="pr">Paraná</option> 
-                        <option value="pe">Pernambuco</option> 
-                        <option value="pi">Piauí</option> 
-                        <option value="rj">Rio de Janeiro</option> 
-                        <option value="rn">Rio Grande do Norte</option> 
-                        <option value="ro">Rondônia</option> 
-                        <option value="rs">Rio Grande do Sul</option> 
-                        <option value="rr">Roraima</option> 
-                        <option value="sc">Santa Catarina</option> 
-                        <option value="se">Sergipe</option> 
-                        <option value="sp">São Paulo</option> 
-                        <option value="to">Tocantins</option> 
-                    </select><br>
-                <label>Cidade</label>
-                <select name="cidade" id="cidade">
-                        <option value="selecione">Selecione</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="AP">Amapá</option>
-                </select><br>
+            <div class="form-row">
+            <div class="col-7">
+                <input name= "cidade" type="text" class="form-control" placeholder="Cidade">
+            </div>
+            <div class="col">
+                <input name= "estado" type="text" class="form-control" placeholder="Estado">
+            </div>
+            <div class="col">
+                <input name= "cep" type="text" class="form-control" placeholder="CEP">
+            </div>
             </div>
                 <div class="bottom">
                         <button type="submit">Enviar</button>

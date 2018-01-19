@@ -13,3 +13,5 @@ def cadastro(request):
     }
     return render (request,"cadastro.html", contexto)
 
+def teste(request):
+    return render(request, "teste.html", {})
