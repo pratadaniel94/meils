@@ -47,7 +47,7 @@ APLICACAO_TERCEIRO = []
 
 INSTALLED_APPS += MINHAS_APLICACAO + APLICACAO_TERCEIRO
 
-MIDDLEWARE = [
+MIDDLEWARE_CLAS= [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
