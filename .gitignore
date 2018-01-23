@@ -1,4 +1,2 @@
 venv/
-pessoas/
-static/
-teste.html
+*pyc
