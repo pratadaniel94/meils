@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-from decouple import config
 from dj_database_url import parse as dburl
 
 
@@ -23,8 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+SECRET_KEY = '7d%)@#0gm5=9^(q*om)bxalomg%q2xa)*ezmzinxi!s(1e(dlv'
+DEBUG = True
 
 ALLOWED_HOSTS = ["meils.herokuapp.com", "localhost"]
 
